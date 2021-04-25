@@ -1,1 +1,16 @@
-<p>user works!</p>
+<div class="container">
+  <br>
+  <h4><mark>Сотрудник:</mark> {{name.first_name}} {{name.last_name}}</h4>
+  <h5><mark>id:</mark>{{id}}</h5>
+  <div class="alert alert-success">
+    <ul>
+      <li>Моб. телефон: <strong>{{contacts.phone_number}}</strong></li>
+      <li>Электронная почта: <strong>{{contacts.e_mail}}</strong></li>
+    </ul>
+  </div>
+  <div class="alert alert-warning">
+    <ul>
+      <li *ngFor = "let tag of tags">{{tag}}</li>
+    </ul>
+  </div>
+</div>
